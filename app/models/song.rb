@@ -3,7 +3,7 @@ class Song < ApplicationRecord
 
   def play
     Thread.new do
-      `play "~/src/dogcat/app/assets/songs/#{name}.wav"`
+      `play "/home/pi/dogcat/app/assets/songs/#{name}.wav"`
     end
   end
 end
