@@ -6,7 +6,7 @@ gem 'audio-playback'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.3.1'
 gem 'ffi', '<1.9.3'
-gem 'espeak-ruby'
+gem 'flite'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'lolize'

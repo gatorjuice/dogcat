@@ -1,10 +1,15 @@
-require 'espeak'
-
 class SayStuff
+  attr_reader :phrase
+
+  def initialize
+    @phrase = sentence
+  end
+
   def run
-    phrase = sentence
-    speech = ESpeak::Speech.new(phrase, speed: rand(80..150), pitch: rand(1..99))
-    speech.speak
+    Thread.new { `flite #{phrase}` }
+  end
+
+  def output
     phrase
   end
 

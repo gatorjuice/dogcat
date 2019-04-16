@@ -1,7 +1,9 @@
 <div class="row">
   <% @modes.each do |mode| %>
     <div class="col-sm-6">
-      <a href="/modes/1"><button type="button" class="btn btn-primary btn-lg text-center"><%= mode.formatted_name %></button></a>
+      <%= link_to "/modes/#{mode.id}" do %>
+        <button type="button" class="btn btn-primary btn-lg text-center"><%= mode.formatted_name %></button>
+      <% end %>
     </div>
   <% end %>
 </div>

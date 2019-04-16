@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get '/' => 'modes#index'
+  get 'songs/index'
+  get 'songs/show'
+  get '/' => 'songs#index'
 
-  resources :modes, only: [:index, :show]
+  resources :songs, only: [:index, :show]
 end

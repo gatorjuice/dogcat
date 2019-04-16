@@ -6,10 +6,10 @@ class ModesController < ApplicationController
   def show
     mode = Mode.find(params[:id])
 
-    mode_runner = ModeInitializer.new(mode)
+    mode_initializer = ModeInitializer.new(mode)
 
-    @output = mode_runner.run
+    mode_initializer.run
 
-    redirect_to '/modes'
+    @output = mode_initializer.output
   end
 end

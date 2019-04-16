@@ -1,0 +1,9 @@
+<div class="row">
+  <% @songs.each do |song| %>
+    <div class="col-sm-3 song">
+      <%= link_to "/songs/#{song.id}" do %>
+        <button type="button" class="btn btn-primary btn-lg text-center"><%= song.name %></button>
+      <% end %>
+    </div>
+  <% end %>
+</div>

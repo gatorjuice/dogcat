@@ -1,0 +1,12 @@
+// Place all the styles related to the songs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.songs-container {
+  max-height: 480px;
+  max-width: 800px;
+}
+
+.song {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
